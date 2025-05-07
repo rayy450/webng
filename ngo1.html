@@ -1,0 +1,202 @@
+<html>
+<head>
+
+    <title>Discover NGOs</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar h3 {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-nav li {
+            margin-left: 20px;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            background: none; 
+            border: none;
+        }
+
+
+
+        .navbar-nav .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .btn:hover {
+            background-color: #555;
+        }
+        .navbar-brand {
+            text-decoration: none;
+            color: inherit; 
+            cursor: default;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        .card {
+            width: 300px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 1rem;
+        }
+
+        .card h5 {
+            margin: 0;
+            font-size: 1.25rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            margin: 0.5rem 0;
+        }
+
+        .card a {
+            text-decoration: none;
+            background-color: #000;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 1rem;
+            text-align: center;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #444;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><h3>Volunteer Opportunities</h3></a>
+            <ul class="navbar-nav">
+                <li><a href="about1.html">About</a></li>
+                <li><a href="opportunities1.html">Opportunities</a></li>
+                <li><a href="ngo1.html">NGOs</a></li>
+                <li><a href="login1.html" class="btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <header>
+        <div>
+            <h1>Discover NGOs</h1>
+            <p>Discover and connect with NGOs making a difference.</p>
+            <p>Explore various NGOs and their missions to find the right fit for your volunteering journey.</p>
+        </div>
+    </header>
+
+    <section>
+        <div class="card-container">
+            <div class="card">
+                <img src="8.jpg" alt="Nanhi Kali">
+                <div class="card-body">
+                    <h5>Nanhi Kali</h5>
+                    <p>Empowers underprivileged girls in India by providing education and academic support.</p>
+                    <a href="https://www.nanhikali.org/">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="9.jpg" alt="HelpAge India">
+                <div class="card-body">
+                    <h5>HelpAge India</h5>
+                    <p>Works to support the needs and rights of elderly individuals through healthcare and advocacy.</p>
+                    <a href="https://www.helpageindia.org/">View Details</a>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="10.jpg" alt="LEPRA Society">
+                <div class="card-body">
+                    <h5>LEPRA Society</h5>
+                    <p>Works to prevent and treat leprosy and other neglected diseases in vulnerable communities.</p>
+                    <a href="https://leprasociety.in/">View Details</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
