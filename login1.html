@@ -1,0 +1,216 @@
+<html>
+<head>
+
+    <title>Login & Register - Volunteer Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar h3 {
+            margin: 0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-nav li {
+            margin-left: 20px;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            background: none; 
+            border: none;
+        }
+
+        .navbar-nav .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .btn:hover {
+            background-color: #555;
+        }
+
+        .navbar-brand {
+            text-decoration: none;
+            color: inherit;
+            cursor: default;
+        }
+
+        header {
+            background-color: #343a40;
+            color: white;
+            text-align: center;
+            padding: 3rem 0;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-form-container {
+            max-width: 700px;
+            margin: 80px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.08);
+        }
+
+        .form-label {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            font-size: 1rem;
+        }
+
+        .btn-dark {
+            background-color: #000;
+            color: white;
+            padding: 0.75rem 1.25rem;
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .btn-dark:hover {
+            background-color: #444;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1rem;
+        }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        #register {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar-brand"><h3>Volunteer Opportunities</h3></a>
+            <ul class="navbar-nav">
+                <li><a href="about1.html">About</a></li>
+                <li><a href="opportunities1.html">Opportunities</a></li>
+                <li><a href="ngo1.html">NGOs</a></li>
+                <li><a href="login1.html" class="btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header>
+        <div>
+            <h1>Login & Register</h1>
+            <p>Login or Register to connect with volunteer opportunities and NGOs.</p>
+        </div>
+    </header>
+
+    <div class="container contact-form-container">
+        <div id="login">
+            <h3>Login</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-dark">Login</button>
+            </form>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="tog()">Register</a></p>
+        </div>
+
+        <div id="register">
+            <h3>Register</h3>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Enter your password" required>
+                </div>
+                <button type="submit" class="btn-dark">Register</button>
+            </form>
+            <p>Already have an account? <a href="javascript:void(0);" onclick="tog()">Login</a></p>
+        </div>
+    </div>
+
+    <script>
+        function tog(){
+            const login = document.getElementById('login');
+            const register = document.getElementById('register');
+            if(login.style.display === 'none'){
+                login.style.display = 'block';
+                register.style.display = 'none';
+            } else {
+                login.style.display = 'none';
+                register.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
