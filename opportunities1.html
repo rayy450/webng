@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Opportunities</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background-color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-bottom: none; /* Ensure there's no bottom border */
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .navbar h3 {
+            margin: 0;
+            font-weight: bold;
+        }
+
+        .navbar-nav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar-nav li {
+            margin-left: 20px;
+        }
+
+        .navbar-nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            border-bottom: none; /* Remove underline */
+        }
+
+        .navbar-nav .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .btn:hover {
+            background-color: #555;
+        }
+
+        .hero {
+            background-color: #343a40;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 3em;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+        }
+
+        .opportunities {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .opportunities h2 {
+            margin-bottom: 40px;
+            font-size: 2em;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .card {
+            width: 300px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-body {
+            padding: 20px;
+        }
+
+        .card-body h5 {
+            margin-bottom: 10px;
+            font-size: 1.25em;
+        }
+
+        .card-body p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .card-body .btn {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .card-body .btn:hover {
+            background-color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="proj.html" class="navbar-brand"><h3>Volunteer Opportunities</h3></a>
+            <ul class="navbar-nav">
+                <li><a href="about.html">About</a></li>
+                <li><a href="opportunities.html">Opportunities</a></li>
+                <li><a href="ngo.html">NGOs</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html" class="btn">Login</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1>Discover Volunteer Opportunities</h1>
+            <p>Make a lasting impact by contributing to causes that matter.</p>
+        </div>
+    </header>
+
+    <section class="opportunities">
+        <div class="container">
+            <h2>Featured Opportunities</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="5.jpg" alt="Teaching Assistant">
+                    <div class="card-body">
+                        <h5>Teaching Assistant</h5>
+                        <p>Help children learn in underprivileged communities.</p>
+                        <a href="opportunity-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="6.jpg" alt="Healthcare Support">
+                    <div class="card-body">
+                        <h5>Healthcare Support</h5>
+                        <p>Assist NGOs providing health services in rural areas.</p>
+                        <a href="opportunity-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="7.jpg" alt="Environmental Cleanup">
+                    <div class="card-body">
+                        <h5>Environmental Cleanup</h5>
+                        <p>Join community drives to clean and green your city.</p>
+                        <a href="opportunity-details.html" class="btn">View Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // If you want to add any JS functionality in the future, you can do it here.
+    </script>
+</body>
+</html>
